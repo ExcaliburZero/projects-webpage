@@ -1,0 +1,10 @@
+{
+    "id": "planetarium_visualization",
+    "title": "Planetarium Visualization",
+    "shortDescription": "Creating animated visualiizations of 3-dimensional astronomy data for use in planetarium presentations.",
+    "languages": ["Python"],
+    "developers": ["Christopher Wells"],
+    "image": "planetarium_visualization.png",
+    "start": "May 2017",
+    "end": "Current"
+}

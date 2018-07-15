@@ -1,0 +1,10 @@
+{
+    "id": "eeg_control_system",
+    "title": "EEG Control System",
+    "shortDescription": "Controlling a robot car through the use of facial gestures via an EEG headband.",
+    "languages": ["Java"],
+    "developers": ["Shakhar Dasgupta", "Christopher Wells", "Kyle Zeller"],
+    "image": "eeg_control_system.jpg",
+    "start": "Feb. 2016",
+    "end": "May 2016"
+}

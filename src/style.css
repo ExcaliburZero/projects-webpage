@@ -1,0 +1,17 @@
+h1.ui.center.header {
+    margin-top: 3em;
+}
+
+.modal-table {
+    display: inline;
+    margin-bottom: 40px;
+}
+
+.modal-table table tbody tr td {
+    padding-bottom: 10px;
+}
+
+.modal-table-row-lable {
+    font-weight: bold;
+    padding-right: 20px;
+}
