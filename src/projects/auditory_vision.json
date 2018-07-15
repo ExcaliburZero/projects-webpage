@@ -6,5 +6,18 @@
     "developers": ["Shakhar Dasgupta", "Alexander Kouthoofd", "Christopher Wells", "Kyle Zeller"],
     "image": "auditory_vision.png",
     "start": "Feb. 2017",
-    "end": "Feb. 2017"
+    "end": "Feb. 2017",
+    "links": [
+        {
+            "title": "GitHub organization",
+            "url": "https://github.com/LakerHackers"
+        }
+    ],
+    "videos": [
+        {
+            "title": "Showcase",
+            "url": "../../project-webpage-files/auditory_vision_showcase.mp4",
+            "description": "A video where we show and talk about the Audtiory Vision device."
+        }
+    ]
 }
