@@ -5,7 +5,7 @@ const PROJECT_IDS = [
     "planetarium_visualization", "distributed_auction_game",
     "adaptive_cruise_control", "parallel_alloy_simulation",
     "des_model_framework", "necessarily_valid_proofs", "auditory_vision",
-	"scareflix", "eeg_control_system"
+    "scareflix", "eeg_control_system"
 ];
 
 async function getProject(projectId) {
@@ -54,7 +54,7 @@ function createCard(project) {
       project.start + ' &mdash; ' + project.end +
       '</span>' +
       '<span class="right floated">' +
-      '<i class="user icon"></i>' + 
+      '<i class="user icon"></i>' +
       project.developers.length +
       '</span>' +
       '</div>' +
