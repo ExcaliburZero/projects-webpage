@@ -1,0 +1,10 @@
+{
+    "id": "adaptive_cruise_control",
+    "title": "Adaptive Cruise Control",
+    "shortDescription": "A cruise control system for a GoPiGo rover that prevents collisions, developed using requirements and saftey engineering.",
+    "languages": ["Python"],
+    "developers": ["Brendan Goldberg", "Michael Kolacki", "Xavier Morton", "James Schaller", "Joseph Scollo", "Christopher Wells"],
+    "image": "adaptive_cruise_control.png",
+    "start": "Feb. 2018",
+    "end": "May 2018"
+}

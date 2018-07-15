@@ -1,7 +1,10 @@
 "use strict";
 
 const PROJECT_PATH = "projects/";
-const PROJECT_IDS = ["planetarium_visualization", "eeg_control_system"];
+const PROJECT_IDS = [
+    "planetarium_visualization", "distributed_auction_game",
+    "adaptive_cruise_control", "auditory_vision", "eeg_control_system"
+];
 
 async function getProject(projectId) {
     const url = PROJECT_PATH + projectId + ".json";

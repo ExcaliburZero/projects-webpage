@@ -1,0 +1,10 @@
+{
+    "id": "auditory_vision",
+    "title": "Auditory Vision",
+    "shortDescription": "Identifying visible objects and relaying that information to the blind using audio cues.",
+    "languages": ["Java"],
+    "developers": ["Shakhar Dasgupta", "Alexander Kouthoofd", "Christopher Wells", "Kyle Zeller"],
+    "image": "auditory_vision.png",
+    "start": "Feb. 2017",
+    "end": "Feb. 2017"
+}

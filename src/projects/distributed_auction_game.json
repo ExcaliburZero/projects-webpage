@@ -1,0 +1,10 @@
+{
+    "id": "distributed_auction_game",
+    "title": "Distributed Auction Game",
+    "shortDescription": "A Game Theory-inspired multiplayer auction game using Paxos for distrubuted, serverless consensus.",
+    "languages": ["Java"],
+    "developers": ["Christopher Wells", "Bohdan Yevdokymov"],
+    "image": "distributed_auction_game.png",
+    "start": "Apr. 2018",
+    "end": "May 2018"
+}
