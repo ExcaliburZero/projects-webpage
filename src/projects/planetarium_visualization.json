@@ -11,6 +11,10 @@
         {
             "title": "Source code",
             "url": "https://github.com/ExcaliburZero/blender-astro-visualization"
-        }
+        },
+		{
+			"title": "Data Visualization and Exploration in the LSST Era presentation",
+			"url": "http://www.ncsa.illinois.edu/Conferences/LSST18/assets/pdfs/frieman_planetaria.pdf"
+		}
     ]
 }
