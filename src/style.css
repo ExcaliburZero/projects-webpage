@@ -1,5 +1,6 @@
 h1.ui.center.header {
     margin-top: 3em;
+    margin-bottom: 50px;
 }
 
 .modal-table {
@@ -14,4 +15,8 @@ h1.ui.center.header {
 .modal-table-row-lable {
     font-weight: bold;
     padding-right: 20px;
+}
+
+#projects {
+    margin-bottom: 50px;
 }
