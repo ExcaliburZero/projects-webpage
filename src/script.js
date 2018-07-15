@@ -20,13 +20,13 @@ async function getProject(projectId) {
 }
 
 async function main() {
-    $("#projects").append('<div class="ui link centered cards"></div>');
+    $("#projects").append('<div class="ui link centered cards" id="projectCards"></div>');
 
     const promises = PROJECT_IDS.map(pI => getProject(pI));
     const projectData = await Promise.all(promises);
 
     projectData.map(p => {
-        $("#projects .cards").append(createCard(p));
+        $("#projectCards").append(createCard(p));
 
         $("#" + p.id).click(() => {
             $("#" +  p.id + "-modal").modal("show");
@@ -70,6 +70,23 @@ function createCard(project) {
         '</tr>')
         : "";
 
+    const videos = (project.hasOwnProperty("videos")) ?
+        ('<h3>Videos</h3>' +
+        '<div class="ui centered cards">' +
+        project.videos.map(v =>
+        '<div class="centered card">' +
+        '<video controls>' +
+        '<source src="' + v.url + '" type="video/mp4">' +
+        '</video>' +
+        '<div class="content">' +
+        '<div class="header">' + v.title + '</div>' +
+        v.description +
+        '</div>' +
+        '</div>'
+        ).join("") +
+        '</div>')
+        : "";
+
     const modal = [
         '<div class="ui modal" id="' + project.id + '-modal">' +
         '<div class="header">' + project.title +
@@ -100,6 +117,7 @@ function createCard(project) {
         '</table>' +
         '</div>' +
         project.shortDescription +
+        videos +
         '<div class="ui hidden divider">' +
         '</div>' +
         '</div>' +

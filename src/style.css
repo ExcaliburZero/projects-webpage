@@ -10,6 +10,7 @@ h1.ui.center.header {
 
 .modal-table table tbody tr td {
     padding-bottom: 10px;
+    vertical-align: top;
 }
 
 .modal-table-row-lable {
@@ -19,4 +20,9 @@ h1.ui.center.header {
 
 #projects {
     margin-bottom: 50px;
+}
+
+video {
+    width: 100%;
+    height: auto;
 }
