@@ -1,0 +1,10 @@
+{
+    "id": "des_model_framework",
+    "title": "DES Model Framework",
+    "shortDescription": "A framework for developing discrete event simulations. Used to implement a Marble Machine simulation.",
+    "languages": ["Scala", "C++"],
+    "developers": ["Christopher Wells"],
+    "image": "des_model_framework.png",
+    "start": "Sep. 2017",
+    "end": "Dec. 2017"
+}

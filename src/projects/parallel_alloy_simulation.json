@@ -1,0 +1,10 @@
+{
+    "id": "parallel_alloy_simulation",
+    "title": "Parallel Alloy Simulation",
+    "shortDescription": "An alloy theromdynamics simulation parallelized using multicore, cluster, and GPU parallelism.",
+    "languages": ["Scala", "C", "CUDA"],
+    "developers": ["Christopher Wells", "Kyle Zeller"],
+    "image": "parallel_alloy_simulation.png",
+    "start": "Nov. 2017",
+    "end": "Dec. 2017"
+}

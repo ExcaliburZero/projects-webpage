@@ -3,7 +3,8 @@
 const PROJECT_PATH = "projects/";
 const PROJECT_IDS = [
     "planetarium_visualization", "distributed_auction_game",
-    "adaptive_cruise_control", "auditory_vision", "eeg_control_system"
+    "adaptive_cruise_control", "parallel_alloy_simulation",
+    "des_model_framework", "auditory_vision", "eeg_control_system"
 ];
 
 async function getProject(projectId) {
