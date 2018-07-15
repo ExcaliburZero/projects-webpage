@@ -22,10 +22,8 @@ async function getProject(projectId) {
 async function main() {
     $("#projects").append('<div class="ui link centered cards"></div>');
 
-    const projectData = [];
-    for (const projectId of PROJECT_IDS) {
-        projectData.push(await getProject(projectId));
-    }
+    const promises = PROJECT_IDS.map(pI => getProject(pI));
+    const projectData = await Promise.all(promises);
 
     projectData.map(p => {
         $("#projects .cards").append(createCard(p));
