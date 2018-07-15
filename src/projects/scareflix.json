@@ -1,0 +1,16 @@
+{
+    "id": "scareflix",
+    "title": "Scareflix",
+    "shortDescription": "A horror movie database website.",
+    "languages": ["Haskell", "Groovy", "Python"],
+    "developers": ["Christopher Wells", "", ""],
+    "image": "scareflix.png",
+    "start": "Sep. 2016",
+    "end": "Nov. 2016",
+    "links": [
+        {
+            "title": "GitHub organization",
+            "url": "https://github.com/ISC329-Team-Scare"
+        }
+    ]
+}

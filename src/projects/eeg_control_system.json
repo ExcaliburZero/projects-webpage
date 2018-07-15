@@ -6,5 +6,11 @@
     "developers": ["Shakhar Dasgupta", "Christopher Wells", "Kyle Zeller"],
     "image": "eeg_control_system.jpg",
     "start": "Feb. 2016",
-    "end": "May 2016"
+    "end": "May 2016",
+    "links": [
+        {
+            "title": "GitHub organization",
+            "url": "https://github.com/SUNY-Oswego-MUSE-Project"
+        }
+    ]
 }

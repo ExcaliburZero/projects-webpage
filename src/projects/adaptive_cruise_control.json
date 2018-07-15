@@ -6,5 +6,11 @@
     "developers": ["Brendan Goldberg", "Michael Kolacki", "Xavier Morton", "James Schaller", "Joseph Scollo", "Christopher Wells"],
     "image": "adaptive_cruise_control.png",
     "start": "Feb. 2018",
-    "end": "May 2018"
+    "end": "May 2018",
+    "links": [
+        {
+            "title": "Source code",
+            "url": "https://github.com/CSC436-18S/gopigo"
+        }
+    ]
 }

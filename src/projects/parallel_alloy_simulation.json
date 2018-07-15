@@ -6,5 +6,15 @@
     "developers": ["Christopher Wells", "Kyle Zeller"],
     "image": "parallel_alloy_simulation.png",
     "start": "Nov. 2017",
-    "end": "Dec. 2017"
+    "end": "Dec. 2017",
+    "links": [
+        {
+            "title": "Scala source code",
+            "url": "https://github.com/ExcaliburZero/alloy-simulation"
+        },
+		{
+			"title": "C & CUDA source code",
+			"url": "https://github.com/ExcaliburZero/alloy-simulation-c-cuda"
+		}
+    ]
 }

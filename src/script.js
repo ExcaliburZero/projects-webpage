@@ -4,7 +4,8 @@ const PROJECT_PATH = "projects/";
 const PROJECT_IDS = [
     "planetarium_visualization", "distributed_auction_game",
     "adaptive_cruise_control", "parallel_alloy_simulation",
-    "des_model_framework", "auditory_vision", "eeg_control_system"
+    "des_model_framework", "necessarily_valid_proofs", "auditory_vision",
+	"scareflix", "eeg_control_system"
 ];
 
 async function getProject(projectId) {
@@ -62,6 +63,15 @@ function createCard(project) {
       '</div>'
     ].join("");
 
+    const links = (project.hasOwnProperty("links")) ?
+        ('<tr>' +
+        '<td class="modal-table-row-lable">Links</td>' +
+        '<td class="modal-table-row-entry">' +
+        project.links.map(l => '<a href="' + l.url + '">' + l.title + '</a>').join(", ") +
+        '</td>' +
+        '</tr>')
+        : "";
+
     const modal = [
         '<div class="ui modal" id="' + project.id + '-modal">' +
         '<div class="header">' + project.title +
@@ -86,6 +96,8 @@ function createCard(project) {
         '<td class="modal-table-row-lable">Languages</td>' +
         '<td class="modal-table-row-entry">' + project.languages.join(", ") + '</td>' +
         '</tr>' +
+
+        links +
 
         '</table>' +
         '</div>' +

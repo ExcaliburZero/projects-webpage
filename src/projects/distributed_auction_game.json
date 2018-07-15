@@ -6,5 +6,11 @@
     "developers": ["Christopher Wells", "Bohdan Yevdokymov"],
     "image": "distributed_auction_game.png",
     "start": "Apr. 2018",
-    "end": "May 2018"
+    "end": "May 2018",
+    "links": [
+        {
+            "title": "Source code",
+            "url": "https://github.com/CSC445-18S-GroupC/distributed-auction-game"
+        }
+    ]
 }

@@ -1,0 +1,16 @@
+{
+    "id": "necessarily_valid_proofs",
+    "title": "Necessarily Valid Proofs",
+    "shortDescription": "A program that validates logic proofs in axiomatic propositional and modal logic. Has compiler and interpreter modes.",
+    "languages": ["Scala"],
+    "developers": ["Christopher Wells"],
+    "image": "necessarily_valid_proofs.png",
+    "start": "Oct. 2017",
+    "end": "Oct. 2017",
+    "links": [
+        {
+            "title": "Source code",
+            "url": "https://github.com/ExcaliburZero/nvproof"
+        }
+    ]
+}
