@@ -16,5 +16,12 @@
 			"title": "C & CUDA source code",
 			"url": "https://github.com/ExcaliburZero/alloy-simulation-c-cuda"
 		}
+    ],
+    "videos": [
+        {
+            "title": "Alloy Animation",
+            "url": "../../project-webpage-files/parallel_alloy_simulation_animation.mp4",
+            "description": "An animation showing the dispersion of heat through a randomized alloy."
+        }
     ]
 }

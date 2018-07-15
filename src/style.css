@@ -26,3 +26,11 @@ video {
     width: 100%;
     height: auto;
 }
+
+.modal-main-content {
+    padding-top: 20px;
+}
+
+.modal-image {
+    padding-right: 20px;
+}

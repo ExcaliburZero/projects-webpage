@@ -12,5 +12,12 @@
             "title": "Source code",
             "url": "https://github.com/CSC436-18S/gopigo"
         }
+    ],
+    "videos": [
+        {
+            "title": "Collision Prevention",
+            "url": "../../project-webpage-files/adaptive_cruise_control_collision_prevention.mp4",
+            "description": "An example of the ACC preventing a rover from collliding with an obstacle."
+        }
     ]
 }

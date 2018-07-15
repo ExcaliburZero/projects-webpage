@@ -6,5 +6,12 @@
     "developers": ["Christopher Wells"],
     "image": "des_model_framework.png",
     "start": "Sep. 2017",
-    "end": "Dec. 2017"
+    "end": "Dec. 2017",
+    "videos": [
+        {
+            "title": "Marble Machine",
+            "url": "../../project-webpage-files/des_model_framework_marble_machine.mp4",
+            "description": "A simulation of the Marble Machine created using the framework."
+        }
+    ]
 }

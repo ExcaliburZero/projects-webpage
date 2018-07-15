@@ -71,7 +71,8 @@ function createCard(project) {
         : "";
 
     const videos = (project.hasOwnProperty("videos")) ?
-        ('<h3>Videos</h3>' +
+        ('<div>' +
+        '<h3 class="ui center aligned header">Videos</h3>' +
         '<div class="ui centered cards">' +
         project.videos.map(v =>
         '<div class="centered card">' +
@@ -84,6 +85,7 @@ function createCard(project) {
         '</div>' +
         '</div>'
         ).join("") +
+        '</div>' +
         '</div>')
         : "";
 
@@ -92,8 +94,11 @@ function createCard(project) {
         '<div class="header">' + project.title +
         '</div>' +
         '<div class="content">' +
-        '<img class="ui medium left floated image" src="' +
+        '<div>' +
+        '<table><tr><td>' +
+        '<img class="ui medium image modal-image" src="' +
         PROJECT_PATH + project.image + '">' +
+        '</td><td>' +
         '<div class="modal-table">' +
         '<table>' +
 
@@ -116,8 +121,11 @@ function createCard(project) {
 
         '</table>' +
         '</div>' +
-        project.shortDescription +
+        '</td></tr></table>' +
+        '</div>' +
+        '<div class="modal-main-content">' +
         videos +
+        '</div>' +
         '<div class="ui hidden divider">' +
         '</div>' +
         '</div>' +
