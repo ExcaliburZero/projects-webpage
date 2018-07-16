@@ -34,6 +34,14 @@ async function main() {
     });
 }
 
+function monthRange(start, end) {
+    if (start === end) {
+        return start;
+    } else {
+        return start + " &mdash; " + end;
+    }
+}
+
 function createCard(project) {
     const card = [
       '<div class="centered card" id="' + project.id + '">' +
@@ -51,7 +59,7 @@ function createCard(project) {
       '</div>' +
       '<div class="extra content">' +
       '<span>' +
-      project.start + ' &mdash; ' + project.end +
+      monthRange(project.start, project.end) +
       '</span>' +
       '<span class="right floated">' +
       '<i class="user icon"></i>' +
@@ -118,7 +126,7 @@ function createCard(project) {
 
         '<tr>' +
         '<td class="modal-table-row-lable">Duration</td>' +
-        '<td class="modal-table-row-entry">' + project.start + " &mdash; " + project.end + '</td>' +
+        '<td class="modal-table-row-entry">' + monthRange(project.start, project.end) + '</td>' +
         '</tr>' +
 
         '<tr>' +
