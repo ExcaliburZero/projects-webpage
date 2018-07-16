@@ -17,11 +17,18 @@
 			"url": "https://github.com/ExcaliburZero/alloy-simulation-c-cuda"
 		}
     ],
-    "videos": [
+    "media": [
         {
+            "type": "video",
             "title": "Alloy Animation",
             "url": "../../project-webpage-files/parallel_alloy_simulation_animation.mp4",
             "description": "An animation showing the dispersion of heat through a randomized alloy."
+        },
+        {
+            "type": "image",
+            "title": "Benchmarking Results",
+            "url": "parallel_alloy_simulation_benchmarking_results.png",
+            "description": "The results on benmarking different paralleization methods on a 2048x2048 alloy."
         }
     ]
 }

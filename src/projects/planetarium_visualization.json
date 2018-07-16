@@ -17,13 +17,15 @@
 			"url": "http://www.ncsa.illinois.edu/Conferences/LSST18/assets/pdfs/frieman_planetaria.pdf"
 		}
     ],
-    "videos": [
+    "media": [
         {
+            "type": "video",
             "title": "Animation of RR Lyrae star data",
             "url": "../../project-webpage-files/planetarium_visualzation_rr_lyrae_1600x1600.mp4",
             "description": "A flythrough of RR Lyrae star data from the OGLE IV survey."
         },
         {
+            "type": "video",
             "title": "Prototype Animation",
             "url": "../../project-webpage-files/planetarium_visualzation_rr_lyrae_720x480.mp4",
             "description": "A prototype animation created of RR Lyrae data. Rendered at low resolution."

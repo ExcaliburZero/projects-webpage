@@ -70,21 +70,32 @@ function createCard(project) {
         '</tr>')
         : "";
 
-    const videos = (project.hasOwnProperty("videos")) ?
+    const media = (project.hasOwnProperty("media")) ?
         ('<div>' +
-        '<h3 class="ui center aligned header">Videos</h3>' +
+        '<h3 class="ui center aligned header">Media</h3>' +
         '<div class="ui centered cards">' +
-        project.videos.map(v =>
-        '<div class="centered card">' +
-        '<video controls>' +
-        '<source src="' + v.url + '" type="video/mp4">' +
-        '</video>' +
-        '<div class="content">' +
-        '<div class="header">' + v.title + '</div>' +
-        v.description +
-        '</div>' +
-        '</div>'
-        ).join("") +
+        project.media.map(v => {
+            let content;
+            if (v.type === "video") {
+                content = '<video controls>' +
+                    '<source src="' + v.url + '" type="video/mp4">' +
+                    '</video>';
+            } else if (v.type === "image") {
+                content = '<div class="image">' +
+                    '<a href="' +  PROJECT_PATH + v.url+ '">' +
+                    '<img src="' + PROJECT_PATH + v.url + '">' +
+                    '</a>' +
+                    '</div>';
+            }
+
+            return '<div class="centered card">' +
+                content +
+                '<div class="content">' +
+                '<div class="header">' + v.title + '</div>' +
+                v.description +
+                '</div>' +
+                '</div>'
+        }).join("") +
         '</div>' +
         '</div>')
         : "";
@@ -124,7 +135,7 @@ function createCard(project) {
         '</td></tr></table>' +
         '</div>' +
         '<div class="modal-main-content">' +
-        videos +
+        media +
         '</div>' +
         '<div class="ui hidden divider">' +
         '</div>' +

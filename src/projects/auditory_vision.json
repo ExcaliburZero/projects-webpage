@@ -13,8 +13,9 @@
             "url": "https://github.com/LakerHackers"
         }
     ],
-    "videos": [
+    "media": [
         {
+            "type": "video",
             "title": "Showcase",
             "url": "../../project-webpage-files/auditory_vision_showcase.mp4",
             "description": "A video where we show and talk about the Audtiory Vision device."
