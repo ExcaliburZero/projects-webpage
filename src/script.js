@@ -82,7 +82,7 @@ function createCard(project) {
                     '</video>';
             } else if (v.type === "image") {
                 content = '<div class="image">' +
-                    '<a href="' +  PROJECT_PATH + v.url+ '">' +
+                    '<a href="' +  PROJECT_PATH + v.url+ '" class="ui image">' +
                     '<img src="' + PROJECT_PATH + v.url + '">' +
                     '</a>' +
                     '</div>';
