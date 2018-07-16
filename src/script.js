@@ -106,10 +106,8 @@ function createCard(project) {
         '</div>' +
         '<div class="content">' +
         '<div>' +
-        '<table><tr><td>' +
-        '<img class="ui medium image modal-image" src="' +
+        '<img class="ui medium left floated image modal-image" src="' +
         PROJECT_PATH + project.image + '">' +
-        '</td><td>' +
         '<div class="modal-table">' +
         '<table>' +
 
@@ -130,10 +128,10 @@ function createCard(project) {
 
         links +
 
-        '</table>' +
         '</div>' +
         '</td></tr></table>' +
         '</div>' +
+        '<div class="ui clearing divider"></div>' +
         '<div class="modal-main-content">' +
         media +
         '</div>' +
