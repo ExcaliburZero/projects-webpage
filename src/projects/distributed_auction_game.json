@@ -12,5 +12,17 @@
             "title": "Source code",
             "url": "https://github.com/CSC445-18S-GroupC/distributed-auction-game"
         }
+    ],
+    "media": [
+        {
+            "type": "presentation",
+            "title": "Paxos-based Distributed Consensus for a Bidding Game",
+            "url": {
+                "local": false,
+                "link": "../../project-webpage-files/distributed_auction_game_presentation.pdf"
+            },
+            "thumbnailUrl": "distributed_auction_game_presentation.png",
+            "description": "A presentation on the project given at the Spring 2018 Computer Science capstone presentation session."
+        }
     ]
 }

@@ -24,7 +24,7 @@
             "type": "presentation",
             "title": "Visualization of Cosmic Data in Quasi-3D with Digital Planetaria",
             "url": {
-                "relative": false,
+                "local": false,
                 "link": "http://www.ncsa.illinois.edu/Conferences/LSST18/assets/pdfs/frieman_planetaria.pdf"
             },
             "thumbnailUrl": "planetarium_visualization_lsst_visualization_2018.png",

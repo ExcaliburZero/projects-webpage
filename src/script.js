@@ -49,12 +49,12 @@ function createMediaContent(media) {
             '</video>';
     } else if (media.type === "image") {
         return '<div class="image">' +
-            '<a href="' +  PROJECT_PATH + media.url+ '" class="ui image">' +
+            '<a href="' + PROJECT_PATH + media.url + '" class="ui image">' +
             '<img src="' + PROJECT_PATH + media.url + '">' +
             '</a>' +
             '</div>';
-    } else if (media.type === "presentation") {
-        const linkUrl = (media.url.relative)
+    } else if (media.type === "presentation" || media.type === "document") {
+        const linkUrl = (media.url.local)
             ? PROJECT_PATH + media.url.link
             : media.url.link;
         return '<div class="image">' +
