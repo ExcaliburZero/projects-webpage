@@ -12,8 +12,8 @@ async function getProject(projectId) {
     const url = PROJECT_PATH + projectId + ".json";
 
     const res = await $.ajax({
-          dataType: "json",
-          url: url
+        dataType: "json",
+        url: url
     });
 
     return res;
@@ -53,6 +53,15 @@ function createMediaContent(media) {
             '<img src="' + PROJECT_PATH + media.url + '">' +
             '</a>' +
             '</div>';
+    } else if (media.type === "presentation") {
+        const linkUrl = (media.url.relative)
+            ? PROJECT_PATH + media.url.link
+            : media.url.link;
+        return '<div class="image">' +
+            '<a href="' + linkUrl + '" class="ui image">' +
+            '<img src="' + PROJECT_PATH + media.thumbnailUrl + '">' +
+            '</a>' +
+            '</div>';
     }
     return "";
 }
@@ -71,47 +80,47 @@ function createMedia(media) {
 
 function createCard(project) {
     const card = [
-      '<div class="centered card" id="' + project.id + '">' +
-      '<div class="image">' +
-      '<img src="' + PROJECT_PATH + project.image + '">' +
-      '</div>' +
-      '<div class="content">' +
-      '<div class="header">' + project.title + '</div>' +
-      '<div class="meta">' +
-      '<a>' + project.languages.join(", ") + '</a>' +
-      '</div>' +
-      '<div class="description">' +
-      project.shortDescription +
-      '</div>' +
-      '</div>' +
-      '<div class="extra content">' +
-      '<span>' +
-      monthRange(project.start, project.end) +
-      '</span>' +
-      '<span class="right floated">' +
-      '<i class="user icon"></i>' +
-      project.developers.length +
-      '</span>' +
-      '</div>' +
-      '</div>'
+        '<div class="centered card" id="' + project.id + '">' +
+        '<div class="image">' +
+        '<img src="' + PROJECT_PATH + project.image + '">' +
+        '</div>' +
+        '<div class="content">' +
+        '<div class="header">' + project.title + '</div>' +
+        '<div class="meta">' +
+        '<a>' + project.languages.join(", ") + '</a>' +
+        '</div>' +
+        '<div class="description">' +
+        project.shortDescription +
+        '</div>' +
+        '</div>' +
+        '<div class="extra content">' +
+        '<span>' +
+        monthRange(project.start, project.end) +
+        '</span>' +
+        '<span class="right floated">' +
+        '<i class="user icon"></i>' +
+        project.developers.length +
+        '</span>' +
+        '</div>' +
+        '</div>'
     ].join("");
 
     const links = (project.hasOwnProperty("links")) ?
         ('<tr>' +
-        '<td class="modal-table-row-lable">Links</td>' +
-        '<td class="modal-table-row-entry">' +
-        project.links.map(l => '<a href="' + l.url + '">' + l.title + '</a>').join(", ") +
-        '</td>' +
-        '</tr>')
+            '<td class="modal-table-row-lable">Links</td>' +
+            '<td class="modal-table-row-entry">' +
+            project.links.map(l => '<a href="' + l.url + '">' + l.title + '</a>').join(", ") +
+            '</td>' +
+            '</tr>')
         : "";
 
     const media = (project.hasOwnProperty("media")) ?
         ('<div>' +
-        '<h3 class="ui center aligned header">Media</h3>' +
-        '<div class="ui centered cards">' +
-        project.media.map(createMedia).join("") +
-        '</div>' +
-        '</div>')
+            '<h3 class="ui center aligned header">Media</h3>' +
+            '<div class="ui centered cards">' +
+            project.media.map(createMedia).join("") +
+            '</div>' +
+            '</div>')
         : "";
 
     const modal = [

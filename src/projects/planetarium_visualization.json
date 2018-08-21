@@ -11,11 +11,7 @@
         {
             "title": "Source code",
             "url": "https://github.com/ExcaliburZero/blender-astro-visualization"
-        },
-		{
-			"title": "Data Visualization and Exploration in the LSST Era presentation",
-			"url": "http://www.ncsa.illinois.edu/Conferences/LSST18/assets/pdfs/frieman_planetaria.pdf"
-		}
+        }
     ],
     "media": [
         {
@@ -23,6 +19,16 @@
             "title": "Animation of RR Lyrae star data",
             "url": "../../project-webpage-files/planetarium_visualzation_rr_lyrae_1600x1600.mp4",
             "description": "A flythrough of RR Lyrae star data from the OGLE IV survey."
+        },
+        {
+            "type": "presentation",
+            "title": "Visualization of Cosmic Data in Quasi-3D with Digital Planetaria",
+            "url": {
+                "relative": false,
+                "link": "http://www.ncsa.illinois.edu/Conferences/LSST18/assets/pdfs/frieman_planetaria.pdf"
+            },
+            "thumbnailUrl": "planetarium_visualization_lsst_visualization_2018.png",
+            "description": "A presentation on the project given at Data Visualization and Exploration in the LSST Era 2018."
         },
         {
             "type": "video",
