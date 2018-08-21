@@ -42,6 +42,33 @@ function monthRange(start, end) {
     }
 }
 
+function createMediaContent(media) {
+    if (media.type === "video") {
+        return '<video controls>' +
+            '<source src="' + media.url + '" type="video/mp4">' +
+            '</video>';
+    } else if (media.type === "image") {
+        return '<div class="image">' +
+            '<a href="' +  PROJECT_PATH + media.url+ '" class="ui image">' +
+            '<img src="' + PROJECT_PATH + media.url + '">' +
+            '</a>' +
+            '</div>';
+    }
+    return "";
+}
+
+function createMedia(media) {
+    const content = createMediaContent(media);
+
+    return '<div class="centered card">' +
+        content +
+        '<div class="content">' +
+        '<div class="header">' + media.title + '</div>' +
+        media.description +
+        '</div>' +
+        '</div>';
+}
+
 function createCard(project) {
     const card = [
       '<div class="centered card" id="' + project.id + '">' +
@@ -82,28 +109,7 @@ function createCard(project) {
         ('<div>' +
         '<h3 class="ui center aligned header">Media</h3>' +
         '<div class="ui centered cards">' +
-        project.media.map(v => {
-            let content;
-            if (v.type === "video") {
-                content = '<video controls>' +
-                    '<source src="' + v.url + '" type="video/mp4">' +
-                    '</video>';
-            } else if (v.type === "image") {
-                content = '<div class="image">' +
-                    '<a href="' +  PROJECT_PATH + v.url+ '" class="ui image">' +
-                    '<img src="' + PROJECT_PATH + v.url + '">' +
-                    '</a>' +
-                    '</div>';
-            }
-
-            return '<div class="centered card">' +
-                content +
-                '<div class="content">' +
-                '<div class="header">' + v.title + '</div>' +
-                v.description +
-                '</div>' +
-                '</div>'
-        }).join("") +
+        project.media.map(createMedia).join("") +
         '</div>' +
         '</div>')
         : "";
